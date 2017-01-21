@@ -1,0 +1,16 @@
+logrotate state -- version 2
+"/home/varghese/.cache/upstart/dbus.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/update-notifier-release.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/gnome-keyring-ssh.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/unity7.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/hud.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/ssh-agent.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/indicator-sound.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/unity-panel-service.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/upstart-event-bridge.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/gpg-agent.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/at-spi2-registryd.log" 2017-1-18-19:11:8
+"/home/varghese/.cache/upstart/bamfdaemon.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/unity-panel-service-lockscreen.log" 2017-1-18-21:16:40
+"/home/varghese/.cache/upstart/unity-settings-daemon.log" 2017-1-21-14:41:19
+"/home/varghese/.cache/upstart/window-stack-bridge.log" 2017-1-21-14:41:19
