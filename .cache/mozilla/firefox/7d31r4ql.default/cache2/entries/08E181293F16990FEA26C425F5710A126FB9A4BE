@@ -1,0 +1,656 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>What's next? Â· Django Girls Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="DjangoGirls">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../django_forms/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://www.gitbook.com/book/djangogirls/djangogirls-tutorial" target="_blank" class="custom-link">Django Girls Tutorial</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    How the Internet works
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introduction to command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Code editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introduction to Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    What is Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Your first Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views â€“ time to create!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introduction to HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamic data in templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS â€“ make it pretty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template extending
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Extend your application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django Forms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    What's next?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://store.djangogirls.org/" target="_blank">
+      
+        <img src="https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg" />
+      
+        </a>
+      
+      
+        <p>ðŸ’– Support our work and buy a Django Girls t-shirt! âœ¨</p>
+      
+      
+      <a href="https://store.djangogirls.org/" class="btn" target="_blank">
+        Get a t-shirt!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >What's next?</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="whats-next">What&apos;s next?</h1>
+<p>Congratulate yourself! <strong>You&apos;re totally awesome</strong>. We&apos;re proud! &lt;3</p>
+<h3 id="what-to-do-now">What to do now?</h3>
+<p>Take a break and relax. You have just done something really huge.</p>
+<p>After that, make sure to follow Django Girls on <a href="http://facebook.com/djangogirls" target="_blank">Facebook</a> or <a href="https://twitter.com/djangogirls" target="_blank">Twitter</a> to stay up to date.</p>
+<h3 id="can-you-recommend-any-further-resources">Can you recommend any further resources?</h3>
+<p>Yes! First, go ahead and try our other book, called <a href="https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/" target="_blank">Django Girls Tutorial: Extensions</a>.</p>
+<p>Later on, you can try the resources listed below. They&apos;re all very recommended!</p>
+<ul>
+<li><a href="https://docs.djangoproject.com/en/1.10/intro/tutorial01/" target="_blank">Django&apos;s official tutorial</a></li>
+<li><a href="http://newcoder.io/tutorials/" target="_blank">New Coder tutorials</a></li>
+<li><a href="https://www.codecademy.com/en/tracks/python" target="_blank">Code Academy Python course</a></li>
+<li><a href="https://www.codecademy.com/tracks/web" target="_blank">Code Academy HTML &amp; CSS course</a></li>
+<li><a href="https://github.com/ggcarrots/django-carrots" target="_blank">Django Carrots tutorial</a></li>
+<li><a href="http://learnpythonthehardway.org/book/" target="_blank">Learn Python The Hard Way book</a></li>
+<li><a href="http://gettingstartedwithdjango.com/" target="_blank">Getting Started With Django video lessons</a></li>
+<li><a href="https://twoscoopspress.com/products/two-scoops-of-django-1-8" target="_blank">Two Scoops of Django: Best Practices for Django 1.8 book</a></li>
+<li><a href="https://hellowebapp.com/" target="_blank">Hello Web App: Learn How to Build a Web App</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_forms/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Django Forms">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"What's next?","level":"1.24","depth":1,"previous":{"title":"Django Forms","level":"1.23","depth":1,"path":"django_forms/README.md","ref":"django_forms/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.7","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx",""],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg","url":"https://store.djangogirls.org/","description":"ðŸ’– Support our work and buy a Django Girls t-shirt! âœ¨","btnText":"Get a t-shirt!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"DjangoGirls/tutorial","theme":"default","author":"DjangoGirls","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Django Girls Tutorial","language":"en","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial","Django Girls Tutorial":"https://www.gitbook.com/book/djangogirls/djangogirls-tutorial"},"gitbook":true},"gitbook":"*","description":"This book is a Django tutorial created for DjangoGirls event."},"file":{"path":"whats_next/README.md","mtime":"2017-01-03T10:44:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-03T10:45:50.329Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+<div><script style="display: none;" type="application/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57505611-7', 'auto', {name: 'microcdn'});
+  ga('microcdn.send', 'pageview');
+
+  var _cdn_prev_loc = window.location.pathname;
+  window.setInterval(function () {
+    if (window.location.pathname !== _cdn_prev_loc) {
+      _cdn_prev_loc = window.location.pathname;
+      ga('microcdn.send', 'pageview');
+    }
+  }, 100);
+
+</script></div>
+</body>
+</html>
+
+‰?\‘      Xƒ‡¯Xƒ‡´=Zc«Xƒ‡°   0    :https://tutorial.djangogirls.org/en/whats_next/ necko:classified 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAQAAgAAAAAAAAAAAAAAAAAAAAAB4vFIJp5wRkeyPxAQ9RJGKPqbqVvKO0mKuIl8ec8o/uhmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAUYMIIFFDCCA/ygAwIBAgISA+CogXebOnV2NupI4ecbgUGnMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xNzAxMTMwNzE5MDBaFw0xNzA0MTMwNzE5MDBaMCMxITAfBgNVBAMTGHR1dG9yaWFsLmRqYW5nb2dpcmxzLm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMxfhKyn9zLBLjvauIzN1sLxJyvHQ+lndDqhJg8H78Cvf+Z+qvaTa9KTf9DpuO2qs3bAYj/ejlBTl3mu3XNHlpl2jlbwOuRgmRxTyf5TFRY5V5tlNMtyp0s8d3vO3QB6HXEtLB2nObLzSMLEyeq9n3UjwE6DhqvTSi//EcGjjN/c10CQaUiOBwy3qdBgk0l2MVSvLDvrIJon8OY+Nupw7Ac0Td+1G+r8KqgTxo7IqCnjiShQC5cborWsQGKmjapZZ5gD4aZ0zhHL70mehuvMXm4mWXjLg2amE4Zi/mKmT1nAVjKKy4PCvPcBjDkWOFvcuCqtpGg9TGK6w6VJAeQauuECAwEAAaOCAhkwggIVMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUuzhK/X3FPaveIScnj3ULekqy0uowHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwcAYIKwYBBQUHAQEEZDBiMC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3JnLzAvBggrBgEFBQcwAoYjaHR0cDovL2NlcnQuaW50LXgzLmxldHNlbmNyeXB0Lm9yZy8wIwYDVR0RBBwwGoIYdHV0b3JpYWwuZGphbmdvZ2lybHMub3JnMIH+BgNVHSAEgfYwgfMwCAYGZ4EMAQIBMIHmBgsrBgEEAYLfEwEBATCB1jAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwgasGCCsGAQUFBwICMIGeDIGbVGhpcyBDZXJ0aWZpY2F0ZSBtYXkgb25seSBiZSByZWxpZWQgdXBvbiBieSBSZWx5aW5nIFBhcnRpZXMgYW5kIG9ubHkgaW4gYWNjb3JkYW5jZSB3aXRoIHRoZSBDZXJ0aWZpY2F0ZSBQb2xpY3kgZm91bmQgYXQgaHR0cHM6Ly9sZXRzZW5jcnlwdC5vcmcvcmVwb3NpdG9yeS8wDQYJKoZIhvcNAQELBQADggEBAHSV3pUEO+GX3GhYx8vwCsGKckIw/qqTYZd+drD3bkz4oqta4SpRTHDgHUh6urLc9qqZoGT+R0qH9fuVYOgaCDpKF2uPxhieqwFNAQDNMbfhTf9pveuRkfb0zr2R9p2DSVK0vf2G7522wB0reZqDXDw+slEzyHYFV8W1A1NQdoE4Ja/zc2HWX+zdArDA6Ns7PKWKgeV+YcVajbuOsaSWYj7VR0hrKKjqkt0fFy3XR6CwfMP6pLgpkWo3S3uOh7PsCB519HCem5xI58OdBLQ0YSCJZTOZiIEeHy0HHFq0rpHEb3wP9NZ/EhUgq727nPjOzGTaeKFZ0QDRtGPafF7KfpLALwADAAAAAAEBAAA= request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2.0 200 OK
+Age: 17
+Content-Encoding: identity
+Content-Type: text/html
+Etag: W/"67258a1427177589ea3f784a0685e2f7"
+Last-Modified: Sat, 21 Jan 2017 16:09:02 GMT
+Vary: Accept-Encoding
+X-Cache: HIT
+Date: Sat, 21 Jan 2017 16:09:19 GMT
+X-Firefox-Spdy: h2
+ charset windows-1252 predictor::resource-count 28 predictor::https://tutorial.djangogirls.org/gitbook/style.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-richquotes/plugin.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-language-picker/plugin.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-codeblock-label/block.css 1,1,1485014959,0 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sectionx/sectionx.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-highlight/website.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-search/search.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-fontsettings/website.css 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/theme.js 1,1,1485014959,0 predictor::https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-heading-anchors/anchor-style.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-ga/plugin.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-github/plugin.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-language-picker/plugin.js 1,1,1485014959,0 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sectionx/sectionx.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-search/search-engine.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-search/search.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-lunr/lunr.min.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-lunr/search-lunr.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sharing/buttons.js 1,1,1485014959,0 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-fontsettings/fontsettings.js 1,1,1485014959,0 predictor::https://www.google-analytics.com/analytics.js 1,1,1485014959,0 predictor::https://www.google-analytics.com/collect?v=1&_v=j47&a=26095690&t=pageview&_s=1&dl=https%3A%2F%2Ftutorial.djangogirls.org%2Fen%2Fwhats_next%2F&ul=en-us&de=UTF-8&dt=What%27s%20next%3F%20%C2%B7%20Django%20Girls%20Tutorial&sd=24-bit&sr=1280x800&vp=1215x705&je=0&_u=AACAAEABI~&jid=&cid=917764078.1484757346&tid=UA-57505611-7&z=698981292 1,1,1485014959,0 predictor::https://www.google-analytics.com/collect?v=1&_v=j47&a=26095690&t=pageview&_s=1&dl=https%3A%2F%2Ftutorial.djangogirls.org%2Fen%2Fwhats_next%2F&dp=%2Fen%2Fwhats_next%2F&ul=en-us&de=UTF-8&dt=What%27s%20next%3F%20%C2%B7%20Django%20Girls%20Tutorial&sd=24-bit&sr=1280x800&vp=1215x705&je=0&_u=AACAAEABI~&jid=&cid=917764078.1484757346&tid=UA-51680040-3&z=882556720 1,1,1485014959,0   L

@@ -1,6 +1,12 @@
-WARN  2017-01-21 14:42:15 unityreak_table (break_type) <unknown>:0 Invalid UTF-8 string passed to pango_layout_set_text()
-WARN  2017-01-21 14:42:15 unityreak_table (break_type) <unknown>:0 Invalid UTF-8 string passed to pango_layout_set_text()
-1484990095869	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
-1484990096186	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
-1484990096470	addons.update-checker	WARN	Update manifest for websensehelper@mozilla.org did not contain an updates property
-1484990096729	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+
+(process:3775): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+
+(process:3878): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+WARN  2017-01-24 17:50:53 unityreak_table (break_type) <unknown>:0 Invalid UTF-8 string passed to pango_layout_set_text()
+WARN  2017-01-24 17:50:53 unityreak_table (break_type) <unknown>:0 Invalid UTF-8 string passed to pango_layout_set_text()
+
+(process:4489): GLib-CRITICAL **: g_path_get_basename: assertion 'file_name != NULL' failed
+1485260631048	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+1485260631502	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+1485260631648	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+1485260633383	addons.update-checker	WARN	Update manifest for websensehelper@mozilla.org did not contain an updates property

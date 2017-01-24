@@ -40,3 +40,24 @@ python manage.py migrate blog
 python manage.py makemigrations blog
 python manage.py startapp blo
 python manage.py startapp blog
+source sample/bin/activate
+python manage.py runserver
+source sample/bin/activate
+python manage.py createsuperuser
+sudo apt-get install git
+git init
+git config --global user.name "Michael"
+git config --global user.email vthomask96@gmail.com
+git status
+git add --all
+git commit -m "My Django girls app,first commit"
+git remote add origin https://github.com/varghese-th/my-first-blog.git
+git push -u origin master
+git remote add origin https://github.com/varghese-th/my-first-blog.git
+git push -u origin master
+source sample/bin/activate
+python manage.py runserver
+python
+source sample/bin/activate
+python3 --version
+python --version

@@ -19,6 +19,15 @@
 			},
 			"buffers":
 			[
+				{
+					"file": "/home/varghese/blog/templates/blog/post_list.html",
+					"settings":
+					{
+						"buffer_size": 931,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -52,6 +61,11 @@
 			},
 			"file_history":
 			[
+				"/home/varghese/mysite/blogurls.py",
+				"/home/varghese/blog/admin.py",
+				"/home/varghese/djangogirls/.gitignore",
+				"/home/varghese/mysite/urls.py",
+				"/home/varghese/blog/views.py",
 				"/home/varghese/mysite/settings.py",
 				"/home/varghese/blog/models.py",
 				"/home/varghese/manage.py",
@@ -90,8 +104,39 @@
 			"groups":
 			[
 				{
+					"selected": 0,
 					"sheets":
 					[
+						{
+							"buffer": 0,
+							"file": "/home/varghese/blog/templates/blog/post_list.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 931,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										660,
+										660
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
 					]
 				}
 			],
@@ -131,7 +176,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,640,-4,1280,212,1280,800",
+			"position": "0,1,0,0,0,0,0,0,0,1280,800",
 			"project": "",
 			"replace":
 			{

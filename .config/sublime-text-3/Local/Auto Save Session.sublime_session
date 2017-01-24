@@ -20,22 +20,12 @@
 			"buffers":
 			[
 				{
-					"file": "/home/varghese/blog/admin.py",
+					"file": "/home/varghese/blog/templates/blog/post_list.html",
 					"settings":
 					{
-						"buffer_size": 85,
+						"buffer_size": 931,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/varghese/djangogirls/.gitignore",
-					"settings":
-					{
-						"buffer_size": 56,
-						"encoding": "UTF-8",
-						"line_ending": "Unix",
-						"name": "*.pyc"
 					}
 				}
 			],
@@ -71,6 +61,11 @@
 			},
 			"file_history":
 			[
+				"/home/varghese/mysite/blogurls.py",
+				"/home/varghese/blog/admin.py",
+				"/home/varghese/djangogirls/.gitignore",
+				"/home/varghese/mysite/urls.py",
+				"/home/varghese/blog/views.py",
 				"/home/varghese/mysite/settings.py",
 				"/home/varghese/blog/models.py",
 				"/home/varghese/manage.py",
@@ -109,58 +104,31 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/home/varghese/blog/admin.py",
+							"file": "/home/varghese/blog/templates/blog/post_list.html",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 85,
+								"buffer_size": 931,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										85,
-										85
+										931,
+										931
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Python/Python.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/varghese/djangogirls/.gitignore",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 56,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										56,
-										56
-									]
-								],
-								"settings":
-								{
-									"auto_name": "*.pyc",
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"syntax": "Packages/HTML/HTML.sublime-syntax",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,

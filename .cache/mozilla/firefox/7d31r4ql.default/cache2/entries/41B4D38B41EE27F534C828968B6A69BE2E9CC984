@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Tutorials – Django
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+          <link rel="search" href="/search" />
+          <link rel="help" href="/wiki/TracGuide" />
+          <link rel="alternate" href="/wiki/Tutorials?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+          <link rel="start" href="/wiki" />
+          <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" />
+          <link rel="stylesheet" href="/chrome/common/css/wiki.css" type="text/css" />
+          <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <style id="trac-noscript" type="text/css">.trac-noscript { display: none !important }</style>
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Search Django" />
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery("#trac-noscript").remove();
+      jQuery(document).ready(function($) {
+        $(".trac-autofocus").focus();
+        $(".trac-target-new").attr("target", "_blank");
+        if ($.ui) { /* is jquery-ui added? */
+          $(".trac-datepicker:not([readonly])").prop("autocomplete", "off").datepicker();
+          $(".trac-datetimepicker:not([readonly])").prop("autocomplete", "off").datetimepicker();
+          $("#main").addClass("trac-nodatetimehint");
+        }
+        $(".trac-disable").disableSubmit(".trac-disable-determinant");
+        setTimeout(function() { $(".trac-scroll").scrollToTop() }, 1);
+        $(".trac-disable-on-submit").disableOnSubmit();
+      });
+    </script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+    <link rel="stylesheet" href="/chrome/site/css/output.css" />
+    <link rel="stylesheet" href="/chrome/site/css/trachacks.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Inconsolata:400,700:latin', 'Roboto:400italic,700italic,300,700,400:latin']
+        }
+    });
+    </script>
+    <script src="/chrome/site/js/lib/modernizr.js"></script>
+  </head>
+  <body id="generic">
+    <div role="banner" id="top">
+      <div class="container">
+        <a class="logo" href="https://www.djangoproject.com/">Django</a>
+        <p class="meta">The web framework for perfectionists with deadlines.</p>
+        <nav role="navigation">
+          <ul>
+            <li><a href="https://www.djangoproject.com/">Overview</a></li>
+            <li><a href="https://www.djangoproject.com/download/">Download</a></li>
+            <li><a href="https://docs.djangoproject.com/">Documentation</a></li>
+            <li><a href="https://www.djangoproject.com/weblog/">News</a></li>
+            <li><a href="https://www.djangoproject.com/community/">Community</a></li>
+            <li class="active"><a href="/">Code</a></li>
+            <li><a href="https://www.djangoproject.com/foundation/">About</a></li>
+            <li><a href="https://www.djangoproject.com/fundraising/">♥ Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="copy-banner">
+      <div class="container">
+        <h1>Code</h1>
+      </div>
+    </div>
+      <div class="container full-width">
+        <div role="main">
+          <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/github/login">GitHub Login</a></li><li><a href="/login">DjangoProject Login</a></li><li><a href="/prefs">Preferences</a></li><li class="last"><a href="/rpc">API</a></li>
+    </ul>
+  </div>
+          <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/query">View Tickets</a></li><li><a href="/wiki/Reports">Reports</a></li><li><a href="/timeline">Timeline</a></li><li class="active"><a href="/wiki">Wiki</a></li><li class="last"><a href="/search">Search</a></li>
+    </ul>
+  </div>
+          <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="/wiki">wiki:</a><a class="pathentry" href="/wiki/Tutorials" title="View Tutorials">Tutorials</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="/wiki/WikiStart">Start Page</a></li><li><a href="/wiki/TitleIndex">Index</a></li><li class="last"><a href="/wiki/Tutorials?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="DjangoTutorials">Django Tutorials</h1>
+<h2 id="GeneralTutorials">General Tutorials</h2>
+<ul><li><a class="ext-link" href="http://djangogirls.org/resources/"><span class="icon">​</span>Django Girls tutorial - the course material used for the DjangoGirls workshops</a>
+</li><li><a class="ext-link" href="http://www.youtube.com/watch?v=oT1A1KKf0SI/"><span class="icon">​</span>Intuitive 20 video tutorial series for Django beginners</a>
+</li><li><a class="ext-link" href="http://www.creativebloq.com/netmag/get-started-django-7132932"><span class="icon">​</span>Short beginner tutorial on building a basic blog site</a>
+</li><li><a class="ext-link" href="http://www.youtube.com/playlist?list=PL385A53B00B8B158E&amp;feature=plcp/"><span class="icon">​</span>Full Web Framework Python Django Tutorial</a>
+</li><li><a class="ext-link" href="http://godjango.com/"><span class="icon">​</span>Going Through Django Screencasts</a>
+</li><li><a class="ext-link" href="http://www.wilsonminer.com/posts/2006/may/10/are-you-generic/"><span class="icon">​</span>Build a portfolio app in 30 minutes with Django (2006)</a>
+</li><li><a class="ext-link" href="http://www.sitepoint.com/build-to-do-list-30-minutes"><span class="icon">​</span>Django Djumpstart: Build a To-do List in 30 Minutes (2006)</a>
+</li><li><a class="ext-link" href="http://www.thomas-guettler.de/vortraege/django/index.html"><span class="icon">​</span>Django bird's (German)</a>
+</li><li><a class="ext-link" href="http://www.django-workshop.de/"><span class="icon">​</span>Django Workshop (German)</a>
+</li><li><a class="ext-link" href="http://www.tangowithdjango.com"><span class="icon">​</span>How to Tango with Django</a> - A beginners guide to web development using Django 1.5.4 - 1.7
+</li><li><a class="ext-link" href="http://fireidea.net/django/"><span class="icon">​</span>Django Web Framework (Vietnamese)</a>
+</li><li><a class="ext-link" href="http://netai-nayek.blogspot.in/2014/08/user-todo-list-application-or-sample_23.html"><span class="icon">​</span>A simple todo list</a>
+</li><li><a class="ext-link" href="https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application"><span class="icon">​</span>Dockerizing a Python Django Web Application</a>
+</li></ul><h2 id="TutorialsonSpecificTopics:">Tutorials on Specific Topics:</h2>
+<blockquote>
+<p>
+Note: <a class="ext-link" href="http://www.djangosnippets.org/"><span class="icon">​</span>Django snippets</a> has plenty of code 'snippets' which do all sorts of useful things too.
+</p>
+</blockquote>
+<h3 id="SetupConfigurations">Setup/Configurations</h3>
+<ul><li><a class="ext-link" href="http://www2.jeffcroft.com/blog/2006/may/11/django-dreamhost/"><span class="icon">​</span>Setting up Django on Dreamhost</a>
+</li><li><a class="ext-link" href="http://robhogg.me.uk/post/2"><span class="icon">​</span>Installing Django on 1and1 shared hosting</a>
+</li><li><a class="ext-link" href="http://thinkhole.org/wp/django-on-windows/"><span class="icon">​</span>Django on Windows HOWTO using Python 2.5, Apache (with mod_python), and PostgreSQL</a>
+</li><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/05/21/django-gzip-and-wsgi"><span class="icon">​</span>Django, gzip and WSGI</a>
+</li><li><a class="ext-link" href="http://code.djangoproject.com/wiki/ServerArrangements"><span class="icon">​</span>A comprehensive list of server arrangements and setup guidelines</a>
+</li><li><a class="ext-link" href="http://www.djangosnippets.org/snippets/105/"><span class="icon">​</span>Installing Django on TextDrive</a>
+</li><li><a class="ext-link" href="http://blog.awarelabs.com/?p=3"><span class="icon">​</span>Installing Django on Gentoo</a>
+</li><li><a class="ext-link" href="http://www.cogitooptimus.com/2007/03/21/deploying-trenchmice/"><span class="icon">​</span>How trenchmice deploys Django</a>
+</li><li><a class="ext-link" href="http://showmedo.com/videos/video?name=stoops010&amp;fromSeriesID=69"><span class="icon">​</span>Video - Installing Django on Ubuntu</a>
+</li><li><a class="ext-link" href="http://coderseye.com/2007/django-and-lighttpd-init-script-and-config-for-ssl.html"><span class="icon">​</span>Django Lighttpd setup with SSL including init.d scripts</a>
+</li><li><a class="ext-link" href="http://www.mangoorange.com/2008/08/01/installing-python-mysqldb-122-on-mac-os-x/"><span class="icon">​</span>Installing Python MySQLdb 1.2.2 on Mac OS X Leopard</a>
+</li><li><a class="ext-link" href="http://realdjango.herokuapp.com/"><span class="icon">​</span>Setting up a Django Project</a>
+</li></ul><h3 id="TestingDjango">Testing Django</h3>
+<ul><li><a class="ext-link" href="http://www.obeythetestinggoat.com/"><span class="icon">​</span>Test-Driven Development with Python</a>
+</li><li><a class="ext-link" href="https://semaphoreci.com/community/tutorials/setting-up-a-bdd-stack-on-a-django-application"><span class="icon">​</span>Setting Up a BDD Stack on a Django Application</a>
+</li></ul><h3 id="UnderstandingDjangoInternals">Understanding Django Internals</h3>
+<ul><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/06/13/how-django-processes-request"><span class="icon">​</span>How Django processes a request</a>
+</li><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/06/28/django-tips-difference-between-blank-and-null"><span class="icon">​</span>The difference between blank and null</a>
+</li><li><a class="wiki" href="/wiki/DevModelCreation">How Django sets up model classes</a>
+</li><li><a class="ext-link" href="http://rnevius.github.io/django_request_response_cycle.png"><span class="icon">​</span>Django's Request-Response Cycle: A Visual Guide</a>
+</li></ul><h3 id="Templates">Templates</h3>
+<ul><li><a class="ext-link" href="http://www2.jeffcroft.com/blog/2006/feb/21/django-templates-an-introduction/"><span class="icon">​</span>Django Templates: An Introduction</a>
+</li><li><a class="ext-link" href="http://www.rossp.org/blog/2006/jun/23/building-blog-django-4/"><span class="icon">​</span>Using Django’s TemplateTags</a>
+</li><li><a class="ext-link" href="http://rfc1437.de/page/django-templates-are-not-limited/"><span class="icon">​</span>Django Templates are not limited</a>
+</li><li><a class="ext-link" href="http://www2.jeffcroft.com/blog/2006/feb/25/django-templates-the-power-of-inheritance/"><span class="icon">​</span>Django Templates: The Power of Inheritance</a>
+</li><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/06/14/django-tips-template-context-processors"><span class="icon">​</span>Template context processors</a>
+</li><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/06/07/django-tips-write-better-template-tags"><span class="icon">​</span>Write better template tags</a>
+</li><li><a class="ext-link" href="http://code.djangoproject.com/wiki/MyghtyTemplatesInDjango"><span class="icon">​</span>Using Myghty Templates</a>
+</li><li><a class="ext-link" href="http://www.unessa.net/en/hoyci/2006/12/custom-admin-templates/"><span class="icon">​</span>Django Tip: Custom Admin Templates</a>
+</li></ul><h3 id="FunstuffwiththeAdminsection">Fun stuff with the Admin section</h3>
+<ul><li><a class="ext-link" href="http://code.djangoproject.com/wiki/AJAXWidgetComboBox"><span class="icon">​</span>An AJAX Select Widget for Django</a>
+</li><li><a class="ext-link" href="http://www2.jeffcroft.com/blog/2006/jul/14/django-admin-your-php-app/"><span class="icon">​</span>Use the Django admin for my PHP app</a>
+</li><li><a class="ext-link" href="http://www.ibm.com/developerworks/opensource/library/os-django-admin/index.html"><span class="icon">​</span>Doing more with the Django admin</a>
+</li></ul><h3 id="GenericViews">Generic Views</h3>
+<ul><li><a class="ext-link" href="http://www.wilsonminer.com/posts/2006/may/10/are-you-generic/"><span class="icon">​</span>Taking advantage of generic views</a>
+</li><li><a class="ext-link" href="http://www.pointy-stick.com/blog/2006/06/29/django-tips-extending-generic-views/"><span class="icon">​</span>Extending Generic Views</a>
+</li></ul><p>
+ 
+</p>
+<h3 id="Email">Email</h3>
+<ul><li><a class="ext-link" href="http://www.rossp.org/blog/2006/jul/11/sending-e-mails-templates/"><span class="icon">​</span>Sending E-Mails using Templates</a>
+</li><li><a class="ext-link" href="http://djangodays.com/2008/10/02/django-10-mail-notification-of-new-comments/comment-page-1/"><span class="icon">​</span>Mail notification of new comments</a>
+</li></ul><h3 id="Searching">Searching</h3>
+<ul><li><a class="ext-link" href="http://www.mercurytide.com/whitepapers/django-full-text-search/"><span class="icon">​</span>Extending Django's database API to include full-text search</a>
+</li><li><a class="ext-link" href="http://www.unessa.net/en/hoyci/2006/11/site-search-and-opensearch-with-django/"><span class="icon">​</span>Building Site Search And OpenSearch-plugin With Django</a>
+</li><li><a class="ext-link" href="http://www.kelvinism.com/tech-blog/adding-search-django/"><span class="icon">​</span>Simple searching with Q</a>
+</li></ul><h3 id="Signals">Signals</h3>
+<ul><li><a class="ext-link" href="http://step-inside.org/blog/2006/jul/01/django_blog_notifying_comments_email/"><span class="icon">​</span>Notification of new comments by email using signals</a>
+</li></ul><h3 id="Forms">Forms</h3>
+<ul><li><a class="ext-link" href="http://www.mikecantelon.com/?q=node/22"><span class="icon">​</span>A Simple Use of Django's New Form Engine</a> (2007)
+</li><li><a class="ext-link" href="http://www.b-list.org/weblog/2007/nov/22/newforms/"><span class="icon">​</span>An overview of newforms usage</a> (2007)
+</li><li><a class="ext-link" href="http://www.peachybits.com/2011/09/django-1-3-form-api-modelform-example/"><span class="icon">​</span>Django 1.3 Form API ModelForm Example</a> (September 2011)
+</li></ul><h3 id="SQLDatabaseRelated">SQL/Database Related</h3>
+<ul><li><a class="ext-link" href="http://www.pointy-stick.com/blog/2006/06/14/custom-sql-django/"><span class="icon">​</span>Custom SQL In Django</a> 
+</li><li><a class="ext-link" href="http://michaeltrier.com/2007/8/12/finding-lookup-items-that-are-not-used"><span class="icon">​</span>Finding lookup items that are not used</a>: Left Outer Joins in Django's ORM.
+</li><li><a class="ext-link" href="http://thebuild.com/presentations/unbreaking-django.pdf"><span class="icon">​</span>Three Years of Worst Practice or Unbreaking Your Django Application</a> – Christophe Pettus's slides from OSCON 2011 explaining Django &amp; PostgreSQL pitfalls
+</li></ul><h3 id="DjangosCommentsFrameworkdjango.contrib.comments">Django's Comments Framework (django.contrib.comments)</h3>
+<p>
+ 
+</p>
+<ul><li><a class="ext-link" href="http://code.djangoproject.com/wiki/UsingFreeComment"><span class="icon">​</span>Using Django’s Free Comments</a>
+</li><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/07/16/django-tips-hacking-freecomment"><span class="icon">​</span>Hacking FreeComment</a>
+</li><li><a class="ext-link" href="http://step-inside.org/blog/2006/jul/01/django_blog_notifying_comments_email/"><span class="icon">​</span>Notification of new comments by email using signals</a>
+</li><li><a class="ext-link" href="http://www.guindilla.eu/blog/2006/10/21/comment-and-karma-functions-django-framework/"><span class="icon">​</span>Use of Comment and Karma functions</a>
+</li></ul><h3 id="RSSFrameworkdjango.contrib.syndication">RSS Framework (django.contrib.syndication)</h3>
+<ul><li><a class="ext-link" href="http://www.oreillynet.com/onlamp/blog/2006/06/django_rss_made_stupidly_simpl.html"><span class="icon">​</span>RSS made stupidly simple</a>
+</li><li><a class="ext-link" href="http://www.kelvinism.com/tech-blog/django-syndication-colddirt/"><span class="icon">​</span>RSS made really stupidly simple</a>
+</li><li><a class="ext-link" href="http://www.kelvinism.com/tech-blog/django-syndication-colddirt-ii/"><span class="icon">​</span>RSS that's not quite as simple (bits-usage)</a>
+</li><li><a class="ext-link" href="http://www.satchmoproject.com/blog/2007/aug/15/satchmo-project-gets-rss/"><span class="icon">​</span>Examples of adding RSS to a site</a>
+</li></ul><h3 id="UserFrameworkdjango.contrib.auth">User Framework (django.contrib.auth)</h3>
+<ul><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/06/06/django-tips-extending-user-model"><span class="icon">​</span>Extending the User model</a>
+</li><li><a class="ext-link" href="http://www.djangosnippets.org/snippets/74/"><span class="icon">​</span>Use email addresses for usernames</a>
+</li><li><a class="ext-link" href="http://www.cogitooptimus.com/2007/03/29/enabling-openid/"><span class="icon">​</span>Enabling OpenID in Django</a>
+</li><li><a class="ext-link" href="http://codingnstuff.com/2010/01/create-your-user-management-frontend-in-django/"><span class="icon">​</span>Create your authentication frontend in django</a> &lt;- broken link
+</li><li><a class="ext-link" href="https://web.archive.org/web/20120701190543/http://codingnstuff.com/2010/01/create-your-user-management-frontend-in-django"><span class="icon">​</span>Create your authentication frontend in django</a> &lt;- Archive.org
+</li></ul><h3 id="AJAXandWeb2.0h-yeah">AJAX and Web 2.0h-yeah</h3>
+<ul><li><a class="ext-link" href="http://wolfram.kriesing.de/blog/index.php/2007/json-serialization-for-django"><span class="icon">​</span>JSON Serialization in Django</a>
+</li><li><a class="ext-link" href="http://www.kelvinism.com/tech-blog/simple-ajax-django/"><span class="icon">​</span>A really simple example of Django with Prototype</a>
+</li><li><a class="ext-link" href="http://www.willarson.com/blog/?p=36"><span class="icon">​</span>6 part introduction to using Prototype and Script.aculo.us with Django</a>
+</li><li><a class="ext-link" href="http://www.b-list.org/weblog/2006/07/31/django-tips-simple-ajax-example-part-1"><span class="icon">​</span>A simple AJAX example</a>
+</li><li><a class="ext-link" href="http://code.djangoproject.com/wiki/KSSInDjango"><span class="icon">​</span>AJAX in django with KSS</a>, using <a class="ext-link" href="https://code.launchpad.net/kss.django"><span class="icon">​</span>kss.django application</a>
+</li><li><a class="ext-link" href="http://www.scottwang.net/how-to-make-django-backbone-and-requirejs-working-together"><span class="icon">​</span>How to make Django Backbone and RequireJs working together</a>
+</li></ul><ul><li><a class="ext-link" href="http://crossbar.io/docs/Adding-Real-Time-to-Django-Applications/"><span class="icon">​</span>Adding Realtime Push to Django Applications</a>
+</li></ul><h3 id="Middleware">Middleware</h3>
+<ul><li><a class="ext-link" href="http://www.willarson.com/blog/?p=46"><span class="icon">​</span>Tutorial on building a Middleware to inject Google Analytics </a>
+</li></ul><h3 id="Benchmarks">Benchmarks</h3>
+<p>
+ 
+</p>
+<ul><li><a class="ext-link" href="http://superjared.com/entry/quick-django-benching/"><span class="icon">​</span>Quick Django Benchmark between Apache's mod_python, Lighttpd's FastCGI and Nginx's FastCGI</a>
+</li><li><a class="ext-link" href="http://www.rkblog.rk.edu.pl/w/p/cherokee-and-lighttpdf-django-scgi-benchmark/"><span class="icon">​</span>cherokee and lighttpdf Django SCGI benchmark</a>
+</li><li><a class="ext-link" href="http://www.rkblog.rk.edu.pl/w/p/simple-python-frameworks-benchmark/"><span class="icon">​</span>Catalyst vs. Django vs. Rails Benchmarks</a>
+</li><li><a class="ext-link" href="http://wiki.rubyonrails.com/rails/pages/Framework+Performance"><span class="icon">​</span>Comparison between Symfony, Django and Rails</a>
+</li><li><a class="ext-link" href="http://www.alrond.com/en/2007/jan/25/performance-test-of-6-leading-frameworks/"><span class="icon">​</span>The performance test of 6 leading frameworks</a>
+</li><li><a class="ext-link" href="http://ido.nl.eu.org/django-unscientific-benchmark-21-12-2007/"><span class="icon">​</span>Django Unscientific Benchmark between mod_python / mod_wsgi / aspen and runserver</a>
+</li></ul><h3 id="Misc.Tutorials">Misc. Tutorials</h3>
+<ul><li><a class="ext-link" href="http://www.mercurytide.co.uk/news/article/django-15-cheat-sheet/"><span class="icon">​</span>Django cheat sheet</a>
+</li><li><a class="ext-link" href="http://www.apkmonk.com/app/com.quizmine.learndjangoandpython/"><span class="icon">​</span>Django &amp; Python Tutorial on Android</a>
+</li><li><a class="ext-link" href="http://www2.jeffcroft.com/blog/2006/jul/14/django-admin-your-php-app/"><span class="icon">​</span>Use the Django admin for my PHP app</a> 
+</li><li><a class="ext-link" href="http://www.carcosa.net/jason/blog/computing/django/gotchas-2006-04-19"><span class="icon">​</span>Some django gotchas</a>
+</li><li><a class="ext-link" href="http://feh.holsman.net/articles/2006/06/03/django-contenttype"><span class="icon">​</span>Django’s Undocumented contenttype app</a>
+</li><li><a class="ext-link" href="http://www.rkblog.rk.edu.pl/w/p/django-profiling-hotshot-and-kcachegrind/"><span class="icon">​</span>Django profiling with hotshot and kcachegrind</a>
+</li><li><a class="ext-link" href="http://www.23excuses.com/2006/Jun/30/simple-django-view-for-dynamic-text-replacement/"><span class="icon">​</span>Simple Django View For Dynamic Text Replacement</a>
+</li><li><a class="ext-link" href="http://www.unessa.net/en/hoyci/2006/11/highlighting-code-using-pygments-and-beautiful-soup/"><span class="icon">​</span>Highlighting Code Using Pygments and Beautiful Soup</a>
+</li><li><a class="ext-link" href="http://mccormac.org/blog/2007/apr/04/dynamically-serving-static-content-django"><span class="icon">​</span>Dynamically serving static content</a>
+</li><li><a class="ext-link" href="http://blog.awarelabs.com/?p=4"><span class="icon">​</span>implementing CNN-style voting</a>, <a class="ext-link" href="http://blog.awarelabs.com/?p=5"><span class="icon">​</span>part 2</a>
+</li><li><a class="wiki" href="/wiki/CalendarRunThough">Calendar-runthough</a> A rough overview of the process.  handy answer to "how does django work?"
+</li><li><a class="ext-link" href="http://mattias.winthernet.se/blog/2007/12/10/growl-and-django.html"><span class="icon">​</span>A simple tutorial for adding Growl notifications to your Django app</a>
+</li></ul><h3 id="FrameworkComparisons">Framework Comparisons</h3>
+<ul><li><a class="ext-link" href="http://www.vaporbase.com/postings/Evaluating_Web_Development_Frameworks%3A_Rails_and_Django_%28part_1%2F15%29"><span class="icon">​</span>Evaluating Web Development Frameworks: Rails and Django (part 1/15)</a>
+</li><li><a class="ext-link" href="http://www.oreillynet.com/onlamp/blog/2006/02/a_brief_djangoturbogears_compa.html"><span class="icon">​</span>A brief Django/Turbogears Comparison from 2006</a>
+</li><li><a class="ext-link" href="http://www.rkblog.rk.edu.pl/w/p/simple-python-frameworks-benchmark/"><span class="icon">​</span>Catalyst vs. Django vs. Rails Benchmarks</a>
+</li><li><a class="ext-link" href="http://oldwiki.rubyonrails.com/rails/pages/Framework+Performance"><span class="icon">​</span>Comparison between Symfony, Django and Rails</a>
+</li><li><a class="ext-link" href="http://www.alrond.com/en/2007/jan/25/performance-test-of-6-leading-frameworks/"><span class="icon">​</span>The performance test of 6 leading frameworks</a>
+</li></ul><h3 id="ExportData">Export Data</h3>
+<ul><li><a class="ext-link" href="http://netai-nayek.blogspot.in/2014/09/how-to-export-your-data-as-csv-xls-or.html"><span class="icon">​</span>Export Data as CSV, Excell (XLS), or XLSX</a>
+</li></ul><h3 id="SampleProject">Sample Project</h3>
+<ul><li><a class="ext-link" href="https://github.com/netai/django-blog"><span class="icon">​</span>This is a sample blog project</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="/wiki/Tutorials?action=diff&amp;version=117" title="Version 117 by Milica: adding links to 2 tutorials">Last modified</a> <a class="timeline" href="/timeline?from=2016-09-09T05%3A25%3A09-05%3A00&amp;precision=second" title="See timeline at 09/09/16 05:25:09">5 months ago</a></span>
+            <span class="trac-print">Last modified on 09/09/16 05:25:09</span>
+          </div>
+        
+        
+      </div>
+      
+    <div id="attachments">
+        <h3 class="foldable">Attachments <span class="trac-count">(1)</span></h3>
+        <div>
+          <ul>
+            <li>
+    <a href="/attachment/wiki/Tutorials/models.py" title="View attachment">models.py</a><a href="/raw-attachment/wiki/Tutorials/models.py" class="trac-rawlink" title="Download">​</a> (<span title="2916 bytes">2.8 KB</span>) - added by <span class="trac-author">Netai Nayek</span> <a class="timeline" href="/timeline?from=2014-10-29T20%3A28%3A02-05%3A00&amp;precision=second" title="See timeline at 10/29/14 20:28:02">2 years ago</a>.
+              <q>create thumbnail on image upload this is so simple</q>
+            </li>
+          </ul>
+          <p>
+            Download all attachments as: <a rel="nofollow" href="/zip-attachment/wiki/Tutorials/">.zip</a>
+          </p>
+        </div>
+    </div>
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/wiki/Tutorials?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+          <a href="#top" class="backtotop"><i class="icon icon-chevron-up"></i> Back to Top</a>
+        </div>
+      </div>
+    <div role="contentinfo">
+      <div class="subfooter">
+        <div class="container">
+          <h1 class="visuallyhidden">Django Links</h1>
+          <div class="col learn">
+            <h2>Learn More</h2>
+            <ul>
+              <li><a href="https://www.djangoproject.com/overview/">About Django</a></li>
+              <li><a href="https://www.djangoproject.com/start/">Getting Started with Django</a></li>
+              <li><a href="https://www.djangoproject.com/foundation/">Django Software Foundation</a></li>
+              <li><a href="https://www.djangoproject.com/conduct/">Code of Conduct</a></li>
+            </ul>
+          </div>
+          <div class="col involved">
+            <h2>Get Involved</h2>
+            <ul>
+              <li><a href="https://www.djangoproject.com/community/">Join a Group</a></li>
+              <li><a href="https://docs.djangoproject.com/en/dev/internals/contributing/">Contribute to Django</a></li>
+              <li><a href="https://docs.djangoproject.com/en/dev/internals/contributing/bugs-and-features/#reporting-security-issues">Submit a Bug</a></li>
+              <li><a href="https://docs.djangoproject.com/en/dev/internals/security/">Report a Security Issue</a></li>
+            </ul>
+          </div>
+          <div class="col follow">
+            <h2>Follow Us</h2>
+            <ul>
+              <li><a href="http://github.com/django">GitHub</a></li>
+              <li><a href="https://twitter.com/djangoproject">Twitter</a></li>
+              <li><a href="https://www.djangoproject.com/rss/weblog/">News RSS</a></li>
+              <li><a href="https://groups.google.com/forum/#!forum/django-users">Django Users Mailing List</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-logo">
+            <a class="logo" href="https://djangoproject.com/">Django</a>
+          </div>
+          <ul class="thanks">
+            <li><span>Hosting by</span> <a class="rackspace" href="http://rackspace.com">Rackspace</a></li>
+            <li class="design"><span>Design by</span> <a class="threespot" href="http://www.threespot.com">Threespot</a> <span class="ampersand">&amp;</span> <a class="andrevv" href="http://andrevv.com/"></a></li>
+          </ul>
+          <p class="copyright">© 2005-2017
+              <a href="https://djangoproject.com/foundation/"> Django Software
+              Foundation</a> unless otherwise noted. Django is a
+              <a href="https://djangoproject.com/trademarks/">registered
+              trademark</a> of the Django Software Foundation.
+          </p>
+        </div>
+      </div>
+    </div>
+  <script data-main="/chrome/site/js/main.js" src="/chrome/site/js/lib/require.js"></script>
+  </body>
+</html>v̪�      X�E�X�E�=\��       .    :https://code.djangoproject.com/wiki/Tutorials necko:classified 1 security-info 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 request-method GET response-head HTTP/1.1 200 Ok
+Server: nginx
+Date: Tue, 24 Jan 2017 12:16:38 GMT
+Content-Type: text/html;charset=utf-8
+Content-Length: 30234
+Cache-Control: must-revalidate
+Expires: Fri, 01 Jan 1999 00:00:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Public-Key-Pins-Report-Only: pin-sha256="og15UrKd7sLz7rIaFIsLD/n3qgqRrXmSQ37/d/8sqi8="; pin-sha256="deadbeefcafedeadbeefcafedeadbeefcafe1111111="; max-age=300; includeSubDomains; report-uri="https://djangoproject.report-uri.io/r/default/hpkp/reportOnly"
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 32 predictor::https://code.djangoproject.com/chrome/common/css/trac.css 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/css/wiki.css 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/js/jquery.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/js/babel.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/js/trac.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/js/search.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/js/folding.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/css/output.css 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/css/trachacks.css 1,1,1485260194,0 predictor::https://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/js/lib/modernizr.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/js/lib/require.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/css/code.css 1,1,1485260194,0 predictor::https://fonts.googleapis.com/css?family=Inconsolata:400,700%7CRoboto:400italic,700italic,300,700,400&subset=latin,latin 1,1,1485260194,0 predictor::https://fonts.gstatic.com/s/inconsolata/v15/BjAYBlHtW3CJxDcjzrnZCI4P5ICox8Kq3LLUNMylGO4.woff2 1,1,1485260194,0 predictor::https://fonts.gstatic.com/s/inconsolata/v15/AIed271kqQlcIRSOnQH0yYlIZu-HDpmDIZMigmsroc4.woff2 1,1,1485260194,0 predictor::https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2 1,1,1485260194,0 predictor::https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2 1,1,1485260194,0 predictor::https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2 1,1,1485260194,0 predictor::https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2 1,1,1485260194,0 predictor::https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/img/logo-django.svg 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/extlink.gif 1,1,1485260194,0 predictor::https://netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/js/main.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/img/logo-rackspace.svg 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/img/logo-threespot.svg 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/img/logo-andrevv.svg 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/collapsed.png 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/site/js/mod/mobile-menu.js 1,1,1485260194,0 predictor::https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js 1,1,1485260194,0 predictor::https://code.djangoproject.com/chrome/common/download.png 1,1,1485260194,0   v
